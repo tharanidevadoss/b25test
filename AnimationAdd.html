@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* Change color */
+        /* .box{
+          width: 100px;
+          height: 100px;
+          background-color: red; 
+          animation :square 1s infinite
+          
+        }
+        @keyframes square{
+            from {background-color: blueviolet;}
+            to {background-color: chocolate;}
+        } */
+        /* Move towards left to right */
+            /* .box{
+          width: 100px;
+          height: 100px;
+          background-color: red; 
+       
+          animation :square 1s infinite alternate
+          
+        }
+        @keyframes square{
+          0% {transform: translateX(0);}
+          100%{transform: translateX(200px);}
+        } */
+         /* Ball bounce */
+           /* .box{
+          width: 100px;
+          height: 100px;
+          background-color: red; 
+       border-radius: 50%;
+          animation :square 1s infinite alternate
+          
+        }
+        @keyframes square{
+          0% {transform: translateY(0);}
+          100%{transform: translateY(200px);}
+        } */
+/* car animation */
+body{
+    background-color: aquamarine;
+}
+.road{
+width: 100%;
+height: 200px;
+background-color: grey;
+}
+.car img{
+  width: 150px;
+  height: 120px;
+}
+.car{
+    animation:movecar 8s alternate;
+}
+@keyframes movecar{
+     0% {transform: translateX(0);}
+          100%{transform: translateX(110vw);}
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+     <div class="road">
+     <div class="car">
+     <img src="https://img.icons8.com/color/96/car.png"/>
+     </div>
+     </div>
+</body>
+</html>

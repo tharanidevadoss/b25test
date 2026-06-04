@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Form</title>
+    <style>
+        table{
+            /* space equally  between left and right margin */
+            margin: auto;
+            width: 400px;
+            height: 200px;
+            font-size: 20px;
+            background-color: rgb(238, 225, 207);
+        }
+        button{
+margin-left: 40px;
+width: 120px;
+height: 60px;
+padding:20px;
+border-radius: 20px;
+background-color: rgb(161, 161, 246);
+color: white;
+
+        }
+        input{
+            height: 30px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="success.html">
+        <h1 align="center"
+        >Login</h1>
+        <table style="border: none;">
+            <tr>
+                <td>
+                    <label for="username">Name</label>
+                </td>
+                <td><input type="text" name="username" value="" placeholder="Ragav"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+
+                </td>
+                <td>
+                    <input type="password" name="Password" value="" placeholder="Ragav@123"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button>Submit</button>
+                     <!-- <button>Cancel</button> -->
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

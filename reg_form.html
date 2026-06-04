@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg form</title>
+    <style>
+        table{
+            margin: auto;
+            width: 50%;
+            height: 400px;
+            font-size: 20px;
+            background-color: rgb(246, 190, 161);
+        }
+        label{
+            color:rgb(40, 104, 104);
+        }
+        input{
+            border-radius: 10px;
+            height: 20px;
+            padding:5px
+        }
+        .button_input{
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            background-color: rgb(188, 188, 235);
+        }
+          .button_input1{
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <form action="success.html">
+        <fieldset>
+            <legend>Login Page</legend>
+            <h1 align="center" style="color: brown;"
+            >Registration</h1>
+        <table border="1">
+            <tr>
+                <td>
+                    <label for="username">USername</label>
+                </td>
+                <td>
+                    <input type="text" value="" placeholder="Ragav" name="username" autocomplete="off" required/>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" value="" placeholder="Ragav@123" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" value="" placeholder="ragav@gmail.com" name="email" required autocomplete="off"/>
+                </td>
+            </tr>
+               <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio">Male
+                    <input type="radio">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="qualification">Qualification</label></td>
+            <td>
+                <input type="checkbox" checked>B.E.,
+                  <input type="checkbox">B.Sc.,
+                    <input type="checkbox">B.Tech.,
+            </td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td>
+                    <select>
+                        <option>Choose City</option>
+                        <option>Coimbatore</option>
+                        <option>Chennai</option>
+                      <option>Salem</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="button_input">
+                    <input type="Reset" class="button_input1">
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
